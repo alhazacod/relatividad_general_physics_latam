@@ -1,0 +1,61 @@
+\documentclass{article}
+
+\usepackage[most]{tcolorbox}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in]{geometry} % Controla los márgenes
+\usepackage{titling}
+
+\title{Taller \#1 Relatividad General Physics Latam }
+\author{Manuel Garcia.}
+\date{\today}
+
+\renewcommand{\maketitlehooka}{%
+  \centering
+  \vspace*{0.05cm} % Espacio vertical antes del título
+}
+
+\renewcommand{\maketitlehookd}{%
+  \vspace*{2cm} % Espacio vertical después de la fecha
+}
+
+\newcommand{\caja}[3]{%
+  \begin{tcolorbox}[colback=#1!5!white,colframe=#1!25!black,title=#2]
+    #3
+  \end{tcolorbox}%
+}
+
+\begin{document}
+\maketitle
+
+\section{Manifold Diferencial}
+\textit{a)} 
+\begin{itemize}
+  \item \textbf{Espacio Topologico } Sea $ X  $ un conjunto y sea $ T  $ una colección de subconjuntos de $ X  $. Se llama espacio topologico a $ (X,T) $ si cumplen las siguientes propiedades:
+    \begin{itemize}
+      \item $ \emptyset $ y $ X  $ están en $ T  $.
+      \item Para $ \{u_i \in T \ | \ i\in I \}, \quad \underset{i }{\bigcup}\  u_i \in T $
+      \item Si $ u_1,u_2 \in T \ \rightarrow \ u_1 \cap u_2 \in T $
+    \end{itemize}
+    $ T  $ es llamado topologia.
+  \item \textbf{Manifold Diferenciables } Sea $ M $ un espacio de Haussdorff, $ M  $ es un manifold diferenciables si tiene la siguiente estructura:
+    \begin{itemize}
+      \item Sea $ M = U_\alpha U_\alpha $ de un recubrimiento abierto
+      \item Hay un mapa continuo e invertible $ \phi_\alpha \ : \ u_\alpha \ \rightarrow \ \phi_\alpha(u_\alpha) \subseteq \mathbb{R}^n $
+      \item Para todo $ \alpha,\beta $ tenemos $ \phi_\alpha(u_\alpha\cap u_\beta) $ es abierto en $ \mathbb{R}^n  $, y las funciones de transición: 
+        \begin{gather*}
+          \phi_\alpha \circ \phi_\beta ^ {-1 }: \ \phi_\beta(u_\alpha \cap u_\beta) \ \rightarrow \ \phi_\alpha(u_\alpha \cap u_\beta)
+        \end{gather*}
+        Son $ C^\infty $-funciones. $ (u_\alpha, \phi_\alpha) $ es llamado un chart de coordenadas y $ \{(u_\alpha, \phi_\alpha)\}_\alpha $ es llamado Atlas.
+    \end{itemize}
+  \item \textbf{Manifold Diferenciable con Frontera} 
+\end{itemize}
+
+
+\end{document}
