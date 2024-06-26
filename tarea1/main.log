@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.29)  23 JUN 2024 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.30)  25 JUN 2024 15:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -560,27 +560,39 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<cilindro.png, id=41, 390.45876pt x 364.36125pt>
+File: cilindro.png Graphic file (type png)
+<use cilindro.png>
+Package pdftex.def Info: cilindro.png  used on input line 83.
+(pdftex.def)             Requested size: 181.18439pt x 169.07596pt.
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./main.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<suave.png, id=61, 593.21625pt x 435.6275pt>
+File: suave.png Graphic file (type png)
+<use suave.png>
+Package pdftex.def Info: suave.png  used on input line 118.
+(pdftex.def)             Requested size: 181.18439pt x 133.04898pt.
+ [2 <./cilindro.png> <./suave.png>] [3] [4] [5] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 21617 strings out of 476076
- 455658 string characters out of 5793775
- 1936187 words of memory out of 5000000
- 43359 multiletter control sequences out of 15000+600000
+ 21646 strings out of 476076
+ 456274 string characters out of 5793775
+ 1954187 words of memory out of 5000000
+ 43388 multiletter control sequences out of 15000+600000
  566306 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,8n,107p,437b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,14n,107p,437b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (1 page, 143809 bytes).
+Output written on main.pdf (5 pages, 568458 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

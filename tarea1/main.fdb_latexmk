@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1719195404.10539 "main.tex" "main.pdf" "main" 1719195405.16411 0
+["pdflatex"] 1719348209.01027 "main.tex" "main.pdf" "main" 1719348211.04391 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1716849630 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1716849630 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -172,10 +172,12 @@
   "/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1716849630 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1716849630 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1717044389.56165 5312047 b07fcd2a9090df96fc745b92a3db793b ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1717044329 7112985 d78657384fbaaa73c5c8e95a5bc6f108 ""
-  "main.aux" 1719195405.04472 140 a0c6e3e45d22b15ae1fc6a7e79758845 "pdflatex"
-  "main.tex" 1719195403.10137 2730 8e66afc4eff1fd8376c7564237b52bb9 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1717112743.79607 5312047 b07fcd2a9090df96fc745b92a3db793b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1717112638 7112995 9b40844dd7163c49431c63d8cee5024e ""
+  "cilindro.png" 1719347975.69792 138179 94841398da96d57ef4a94110d480af95 ""
+  "main.aux" 1719348210.77821 686 df4a25cb67553db3976fee74d0f2853e "pdflatex"
+  "main.tex" 1719348204.85153 11861 a98eb0ccb91b497e833c38517bd94cbd ""
+  "suave.png" 1719347977.19458 230987 84a02cebadbd84ec5934c6d749ac5191 ""
   (generated)
   "main.aux"
   "main.log"
