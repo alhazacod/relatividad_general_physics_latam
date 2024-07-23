@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Definir la variedad}
+\PYG{n}{M} \PYG{o}{=} \PYG{n}{Manifold}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}R\PYGZca{}4\PYGZsq{}}\PYG{p}{,} \PYG{n}{start\PYGZus{}index}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Definir las coordenadas}
+\PYG{n}{c\PYGZus{}spher}\PYG{o}{.\PYGZlt{}}\PYG{n}{t}\PYG{p}{,}\PYG{n}{r}\PYG{p}{,}\PYG{n}{th}\PYG{p}{,}\PYG{n}{ph}\PYG{o}{\PYGZgt{}} \PYG{o}{=} \PYG{n}{M}\PYG{o}{.}\PYG{n}{chart}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}t:(0,+oo) r:(0,+oo) th:(0,pi):\PYGZbs{}theta ph:(0,2*pi):\PYGZbs{}phi\PYGZsq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Definir la función a(t)}
+\PYG{n}{f} \PYG{o}{=} \PYG{n}{function}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}f\PYGZsq{}}\PYG{p}{)(}\PYG{n}{r}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Definir la métrica g de FRW}
+\PYG{n}{g} \PYG{o}{=} \PYG{n}{M}\PYG{o}{.}\PYG{n}{metric}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}g\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{f}
+\PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{n}{f}
+\PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{]} \PYG{o}{=} \PYG{n}{r}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}
+\PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{]} \PYG{o}{=} \PYG{n}{r}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2} \PYG{o}{*} \PYG{n}{sin}\PYG{p}{(}\PYG{n}{th}\PYG{p}{)}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}
+\PYG{c+c1}{\PYGZsh{}inversa de la metrica}
+\PYG{n}{ginv} \PYG{o}{=} \PYG{n}{g}\PYG{o}{.}\PYG{n}{inverse}\PYG{p}{()}
+\end{Verbatim}
