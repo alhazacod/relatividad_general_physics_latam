@@ -32,10 +32,83 @@
   \end{tcolorbox}%
 }
 
+
 \begin{document}
 \maketitle
 
+
+
+
+
+
 \section{Derivada Covariante}
+\textbf{a) } Usando $\nabla T = d^{\ast} \nabla T$ y la regla de leibniz:
+
+\[
+\nabla T = \sum \nabla (T_{i_1 \ldots i_k}^{j_1 \ldots j_l} dx^{i_1} \otimes \ldots \otimes dx^{i_k} \otimes \partial_{j_1} \otimes \ldots \otimes \partial_{j_l})
+\]
+
+\begin{gather*}
+  =dx^i \otimes (\partial_i T _{i_1...i_r } ^ {j_1...j_s}dx ^ {i_1 }\otimes \cdots \otimes \partial _{j_s } - T _{j_1...j_r } ^ {i_1...i_s}(\Gamma _{i\lambda}^{i_1} dx^\lambda \otimes \cdots \otimes \partial_{j_s} - \cdots - \Gamma _{i\lambda}^{i_1}dx^{i_1} \otimes dx^\lambda\otimes \cdots \otimes \partial _{j_s } \\+ \Gamma _{ij_1}^\lambda dx^{i_1} \otimes \cdots \otimes dx^{i_r}\otimes \partial_\lambda \otimes \cdots + \cdots + \Gamma _{ij_s}^\lambda dx^{i_1}\otimes \cdots \otimes \partial_\lambda))
+\end{gather*}
+
+Cambiando entre índices mudos y simplificando:
+
+\[
+  = \left( \partial _{i } T_{i_1 \ldots i_r}^{j_1 \ldots j_s} + \sum_{m=1}^s T_{i_1 i_r}^{j_1... j_{m-1}\lambda_{j_{m-1}...j_s}} \Gamma_{j_m}^{i_\lambda} - \sum_{l=1}^r T_{i_1...i_{l-}}^{j_1...j_s} \Gamma_{ii_l}^\lambda \right) dx^i\otimes dx^{i_1}\otimes\cdots\otimes\partial_{j_s}
+\]
+
+
+
+\textbf{b) } Asumimos compatibilidad de la metrica por lo que:
+
+\[
+\nabla_{X} g^{ij} = 0
+\]
+
+Para el producto $(S, T)$:
+\begin{align*}
+  X (g^{ij} S_{ij} T_{kl}) &= \nabla_{X} (g^{ij} g_{ij} S_{ij} T_{kl}) = g^{ik}g^{jl} ((\nabla_{X} S_{ij}) T_{kl} + S_{ij} (\nabla_{X} T_{kl}))\\
+                           &= \bra{\nabla_{X} S}\ket{ T}_{g} + \bra{S}\ket{ \nabla_{X} T)}_{g}
+\end{align*}
+
+Expresando $g^{ij}$ con su contracción de índices $(g^{ik} g_{il} = \delta_{l}^{k})$ tenemos:
+
+\[
+  X (\text{tr}_{g} T) = X (g^{ik} g^{jl}g_{kl}T_{ij}) = X(\bra{g}\ket{T}_g)
+\]
+
+Usando la identidad demostrada en el punto anterior:
+
+\[
+  X (\text{tr}_{g} T) = \bra{g}\ket{\nabla_X T}_g
+\]
+
+Localmente aplicamos la contracción de los tensores métricos nuevamente:
+\[
+  X (g^{ij} T_{ij}) = X^{\rho} \nabla_\rho (g^{ik} g^{jl} g_{kl} T_{ij}) = X^{\rho} g^{ik} g^{jl} g_{kl} (\nabla_\rho T_{ij}) = x^{\rho}g^{ij} (\nabla_p T_{ij})
+\]
+
+
+
+
+\textbf{c) } Usamos la identidad $\det(A) = e^{\text{tr} (\ln A)}$:
+\begin{align}
+\frac{\partial \ln \det (A)}{\partial x^j} &= \text{tr} (A^{-1} \frac{\partial A}{\partial x^j}) \\
+\frac{\partial \det (A)}{\partial x^j} &= \det (A) \text{tr} (A^{-1} \frac{\partial A}{\partial x^j})
+\end{align}
+Reemplazando $A$ por el tensor métrico, obtenemos:
+\[
+\frac{\partial \sqrt{\det (g_{\mu\nu})}}{\partial x^j} = \frac{1}{2} (\det (g_{\mu\nu}))^{-\frac{1}{2}} g^{lm} \partial_j g_{lm}
+\]
+\[
+\frac{\partial \ln \det g_{\mu\nu}}{\partial x^j} = g^{\rho\sigma} \partial_j g_{\rho\sigma}
+\]
+
+
+
+
+
 
 
 \section{Tensor de Riemann}

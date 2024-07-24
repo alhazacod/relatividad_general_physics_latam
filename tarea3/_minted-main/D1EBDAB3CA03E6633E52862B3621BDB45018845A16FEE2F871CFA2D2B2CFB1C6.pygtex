@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{ricciinv} \PYG{o}{=} \PYG{n}{ginv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}\PYGZca{}mr\PYGZdq{}}\PYG{p}{]}\PYG{o}{*}\PYG{p}{(}\PYG{n}{ginv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}\PYGZca{}ns\PYGZdq{}}\PYG{p}{]}\PYG{o}{*}\PYG{n}{ricci}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}rs\PYGZdq{}}\PYG{p}{])[}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}r\PYGZca{}n\PYGZdq{}}\PYG{p}{]}
+\PYG{n}{ricci\PYGZus{}scalar} \PYG{o}{=} \PYG{n}{g}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}\PYGZus{}mn\PYGZdq{}}\PYG{p}{]}\PYG{o}{*}\PYG{n}{ricciinv}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}\PYGZca{}mn\PYGZdq{}}\PYG{p}{]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}R = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{latex}\PYG{p}{(}\PYG{n}{ricci\PYGZus{}scalar}\PYG{o}{.}\PYG{n}{display}\PYG{p}{())}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}
