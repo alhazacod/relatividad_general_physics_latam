@@ -1,0 +1,84 @@
+\documentclass{article}
+
+\usepackage[most]{tcolorbox}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in]{geometry} % Controla los márgenes
+\usepackage{titling}
+
+\title{Tarea 4 Relatividad General }
+\author{Manuel Garcia.}
+\date{\today}
+
+\renewcommand{\maketitlehooka}{%
+  \centering
+  \vspace*{0.05cm} % Espacio vertical antes del título
+}
+
+\renewcommand{\maketitlehookd}{%
+  \vspace*{2cm} % Espacio vertical después de la fecha
+}
+
+\newcommand{\caja}[3]{%
+  \begin{tcolorbox}[colback=#1!5!white,colframe=#1!25!black,title=#2]
+    #3
+  \end{tcolorbox}%
+}
+
+\begin{document}
+\maketitle
+
+\section{Preambulo: Agujeros Negros}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Agujero Negro de Reissner-Nordstrom}
+
+\hfill
+
+\textbf{a) }
+
+\textbf{b) } Buscamos los valores de $ r  $ donde $ g ^ {rr } = 0  $
+\begin{gather*}
+  1 - \frac{2M }{r} + \frac{Q^2 }{r^2 } = 0 \\
+  r^2 - 2Mr + Q^2 = 0 \\
+  r _{\pm } = M \pm \sqrt{M^2 - Q^2 } 
+\end{gather*}
+Para $ M > \left|Q \right| $
+\begin{gather*}
+  r _{\pm } = M \pm \sqrt{M^2 - Q^2 }  
+\end{gather*}
+Para $ M = \left|Q \right| $
+\begin{gather*}
+  r _{+  } = r _{-   } = M 
+\end{gather*}
+Para $ M < \left|Q \right| $ No hay soluciones reales por lo que no existen horizontes de eventos.
+
+
+\textbf{c) } 
+\begin{gather*}
+  v= t + r^* \quad \rightarrow \quad dt = dv + dr^* \qquad \qquad dr^* = \frac{dr }{f(r)} 
+\end{gather*}
+
+Reemplazando en la metrica 
+\begin{align*}
+  ds^2 &= - f(r) (dv-dr^*)^2 + f^{-1}\left(r\right) dr^2 + r^2 d\Omega \\
+       &= - f(r) dv^2 + 2 f(r) dv dr^* - f(r) dr^* + f(r) dr^2 + r^2 d\Omega \\
+       &= - f(r) dv^2 + 2 f(r) dv \frac{dr }{f(r) } - f(r) \frac{dr^2 }{f^2(r) } + f(r) dr^2 + r^2 d\Omega \\
+       &= - f(r) dv^2 + 2 dvdr + r^2 d\Omega
+\end{align*}
+
+Para hallar la singularidad de la metrica: 
+\begin{gather*}
+  f(r) = 1 - \frac{2M }{r } + \frac{Q^2 }{r^2 } \quad \rightarrow \quad \infty \qquad \text{Cuando } r \rightarrow 0  
+\end{gather*}
+Por lo que existe una singularidad en $ r= 0 $.
+
+
+\end{document}
