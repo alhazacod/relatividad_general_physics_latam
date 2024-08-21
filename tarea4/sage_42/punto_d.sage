@@ -20,4 +20,4 @@ print(g.display())
 
 ########### Vector de Killing ###############
 v = M.vector_field(1,0,0,0, name='v') # Vector de Killing  \frac{\partial}{\partial v}
-print(f'L_\\xi(g) = {g.lie_der(v).display()}')
+print(f'L_\\xi(g) = {latex(g.lie_der(v).display())}')

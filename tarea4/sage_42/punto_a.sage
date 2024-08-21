@@ -16,5 +16,5 @@ g[1,1] = 1/fr
 g[2,2] = r^2
 g[3,3] = r^2*sin(th)^2
 
-print(g.display())
-print((g.ricci()).display())
+print( latex(g.display()) )
+print( latex((g.ricci()).display()) )

@@ -1,0 +1,195 @@
+\documentclass{article}
+
+\usepackage[most]{tcolorbox}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in]{geometry} % Controla los márgenes
+\usepackage{titling}
+
+\title{Tarea \#5 Relatividad General Physics Latam }
+\author{Manuel Garcia.}
+\date{\today}
+
+\renewcommand{\maketitlehooka}{%
+  \centering
+  \vspace*{0.05cm} % Espacio vertical antes del título
+}
+
+\renewcommand{\maketitlehookd}{%
+  \vspace*{2cm} % Espacio vertical después de la fecha
+}
+
+\newcommand{\caja}[3]{%
+  \begin{tcolorbox}[colback=#1!5!white,colframe=#1!25!black,title=#2]
+    #3
+  \end{tcolorbox}%
+}
+
+\begin{document}
+\maketitle
+
+\section{Agujeros negro en otras dimensiones }
+\begin{gather}
+  g^{00} = \frac{r ^ {6 }}{l ^ {6 }} \left(1 - \frac{ml^2 }{r^2 }\right) \qquad \qquad 
+  g ^ {11 } = -\frac{l^2 }{r^2 }\left(1 - \frac{ml^2 }{r^2 }\right)^ {-1 } \\ 
+  \frac{d g _{00 }  }{d r} = \frac{6r^5 }{l^6 } - \frac{4mr^3 }{l^4}
+\end{gather}
+\begin{align*}
+  \kappa &= \frac{1}{2} \left[\sqrt{-g ^ {00 } g ^ {11 }}  \left|\frac{d g _{00 }  }{d r}\right| \right] _{r = r^+} \\
+         &= \frac{1}{2} \left[\sqrt{\left(\frac{r^6 }{l^6 } - \frac{mr^4 }{l^4 }\right) \left(\frac{r^2 }{l^2 } - m\right)^ {-1}} \left(\frac{6r^5 }{l^6 } - \frac{4mr^3 }{l^4}\right) \right] \\
+         &= \left. \frac{r^5 }{l^6 }\left[\frac{3r^2 }{l^2 } - 2m\right] \right|_{r= r^+}  \\
+         &= \frac{r_+^5 }{l^6 }
+\end{align*}
+Reemplazando en la temperatura de Hawking $ T_H = \frac{\kappa}{2\pi } $
+\begin{gather*}
+  T_H = \frac{r^5 }{2\pi l^6 } 
+\end{gather*}
+
+
+
+
+
+\section{Identidades útiles }
+\begin{itemize}
+  \item 
+    \[
+    |M|^{-1} \delta |M| = M^{ik} \delta M_{ik}
+    \]
+
+    Sabemos que la variación del determinante de una matriz \( M \) se puede expresar como:
+
+    \[
+    \delta |M| = |M| \text{tr}(M^{-1} \delta M)
+    \]
+
+    Multiplicando por \( |M|^{-1} \):
+
+    \[
+    \frac{\delta |M|}{|M|} = \text{tr}(M^{-1} \delta M) = M ^ {ik } \delta M _{ik} 
+    \]
+  \item 
+    \[
+    \text{tr} \left( M - \frac{1}{D} \text{tr}(M) \right)^2 = \text{tr}(M^2) - \frac{1}{D} (\text{tr}(M))^2
+    \]
+
+    Expandiendo la traza del cuadrado:
+    \begin{align*}
+      \text{tr} \left( M - \frac{1}{D} \text{tr}(M) \right)^2 &= \text{tr} \left( M^2 - 2\frac{1}{D} \text{tr}(M) M + \frac{1}{D^2} (\text{tr}(M))^2 I \right)\\
+              &=\text{tr}(M^2) - \frac{2}{D} \text{tr}(M) \text{tr}(M) + \frac{1}{D^2} (\text{tr}(M))^2 \text{tr}(I)  \\
+              &= \text{tr}(M^2) - \frac{2}{D} (\text{tr}(M))^2 + \frac{1}{D} (\text{tr}(M))^2 \\
+              &= \text{tr}(M^2) - \frac{1}{D} (\text{tr}(M))^2
+    \end{align*}
+
+
+
+  \item 
+    consideremos el "shear" \(\sigma_{ij}\), definido como:
+
+    \[
+    \sigma_{ij} \equiv \frac{1}{2} \left( g^{ik} g_{jk} - \frac{1}{D-1} \delta_j^k g^{kl} g_{il} \right)
+    \]
+
+    Queremos demostrar que la expresión para \( \text{tr}(\sigma^2) \) se puede escribir como:
+
+    \[
+    \text{tr}(\sigma^2) = \frac{1}{4} \left( g^{ik} g_{jk} g^{jl} g_{il} \right) - \frac{1}{D-1} \theta^2
+    \]
+
+    Donde:
+
+    \[
+    \theta \equiv \frac{1}{2} g^{ik} \dot{g}_{ik}
+    \]
+
+    Primero, calculamos \( \text{tr}(\sigma^2) \):
+
+    \[
+    \text{tr}(\sigma^2) = \sigma_j^i \sigma_i^j
+    \]
+
+    Sustituyendo \( \sigma_{ij} \) en esta expresión:
+
+    \[
+    \sigma_j^i \sigma_i^j = \frac{1}{4} \left( g^{ik} g_{jk} - \frac{1}{D-1} \delta_j^k g^{kl} g_{il} \right) \left( g^{jl} g_{il} - \frac{1}{D-1} \delta_i^l g^{lm} g_{jm} \right)
+    \]
+
+    Expandiendo y simplificando usando las propiedades de las trazas y de los productos matriciales, llegamos a:
+
+    \[
+    \text{tr}(\sigma^2) = \frac{1}{4} \left( g^{ik} g_{jk} g^{jl} g_{il} \right) - \frac{1}{D-1} \theta^2
+    \]
+\end{itemize}
+
+
+
+
+
+
+
+
+\section{Edad del universo }
+
+\[
+H^2(t) = \frac{8\pi G}{3} \left[ \rho(t) + \frac{\rho_r - \rho_0}{a^2(t)} \right]
+\]
+\[
+dt = H_0^{-1} \frac{da}{a} \left[ \Omega_\Lambda + \frac{1 - \Omega_\Lambda}{a^3} \right]^{-1/2}
+\]
+\begin{enumerate}
+  \item[\textbf{a)}] 
+    Si \(\Omega_\Lambda = 0\), la ecuación se simplifica:
+    \[
+    dt_0 = H_0^{-1} \frac{da}{a} \left[ \frac{1}{a^3} \right]^{-1/2} = H_0^{-1} a ^ {1/2} da
+  \]
+    La integral es:
+    \[
+    t _{0}  = H_0^{-1} \int_0^1 a^{1/2} da
+    \]
+    \[
+    t _{0}  = \left. H_0^{-1} \frac{2}{3} a ^ {3/2 } \right| _{0}^1 = \frac{2}{3 H_0} 
+  \]
+
+  \item[\textbf{b)}] 
+    Para \(\Omega_\Lambda = 0.7\), la ecuación es:
+    \[
+    dt _{0.7}= H_0^{-1} \frac{da}{a} \left[ 0.7 + \frac{0.3}{a^3} \right]^{-1/2}
+    \]
+    La integral es:
+    \[
+      t_{0.7} = H_0^{-1} \int_0^1 \left[ \frac{0.7 }{a^2 } + \frac{0.3 }{a^5} \right]^{-1/2} da
+    \]
+    Esta integral se resuelve numéricamente obteniendo que 
+    \begin{gather*}
+      t _{0.7 }  = \frac{0.36}{H_0} 
+    \end{gather*}
+
+\end{enumerate}
+
+\subsection*{(b) Integral para \(\Omega_\Lambda = 0.7\)}
+Para \(\Omega_\Lambda = 0.7\), la ecuación es:
+\[
+dt _{0.7}= H_0^{-1} \frac{da}{a} \left[ 0.7 + \frac{0.3}{a^3} \right]^{-1/2}
+\]
+La integral es:
+\[
+  t_{0.7} = H_0^{-1} \int_0^1 \frac{da}{a \left[ 0.7 + \frac{0.3}{a^3} \right]^{1/2}}
+\]
+Esta integral se resuelve numéricamente.
+
+\subsection*{(c) Repetición del cálculo para diferentes valores de \(h\)}
+Repetimos el cálculo para \(h = 0.67\), \(h = 0.73\) y \(h = 0.69\).
+
+Para \(\Omega_\Lambda = 0\):
+\[
+t_0 = \frac{2}{H_0} = \frac{2}{100 h \text{ km/s/Mpc}} = \frac{2}{100 \cdot 3.24 \times 10^{-18} h \text{ s}^{-1}}
+\]
+
+Para \(\Omega_\Lambda = 0.7\), \(t_0\) se calculará numéricamente, pero estará afectado por el valor de \(H_0\) (que depende de \(h\)).
+
+\end{document}

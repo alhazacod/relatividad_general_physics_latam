@@ -6,6 +6,7 @@
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{minted}
 
 
 \usepackage[utf8]{inputenc}
@@ -36,13 +37,86 @@
 
 \section{Preambulo: Agujeros Negros}
 
+
+\section*{Capítulo 4: Deformando el Espacio-tiempo}
+
+Este capítulo se centra en el descubrimiento de la métrica de Schwarzschild, una solución fundamental a las ecuaciones de la relatividad general de Einstein. Karl Schwarzschild logró derivar esta solución en 1916 mientras servía en el ejército alemán. Su trabajo permitió describir la geometría del espacio-tiempo alrededor de una estrella. La métrica de Schwarzschild describe cómo la presencia de un objeto masivo curva el espacio-tiempo, lo que influye en cómo se mueven otros objetos en su vecindad.
+
+Una de las ideas clave del capítulo es la analogía del "parche" de espacio-tiempo plano que puede coserse junto con otros parches para formar un espacio-tiempo curvado. Este concepto es esencial para entender cómo la gravedad no es una fuerza tradicional, sino más bien el resultado de la curvatura del espacio-tiempo. Los autores ilustran esto mediante ejemplos simples como la curvatura de la superficie terrestre y cómo afecta las mediciones de distancia.
+
+Además, se explica la importancia del radio de Schwarzschild, una medida que define el horizonte de eventos de un agujero negro. Este radio es crucial porque, más allá de él, la atracción gravitacional es tan fuerte que ni siquiera la luz puede escapar. El capítulo también destaca cómo el tiempo y el espacio se distorsionan en presencia de una gran masa, y cómo estos efectos se vuelven más pronunciados a medida que uno se acerca a un objeto como un agujero negro.
+
+Finalmente, los autores abordan cómo la solución de Schwarzschild no solo es útil para describir estrellas, sino que también aplica a los agujeros negros, una idea que en 1916 ni Schwarzschild ni Einstein podrían haber anticipado completamente. Este descubrimiento abrió el camino para una comprensión más profunda de los agujeros negros en el contexto de la relatividad general.
+
+\section*{Capítulo 5: Dentro del Agujero Negro}
+
+El capítulo 5 explora las consecuencias de cruzar el horizonte de eventos de un agujero negro, utilizando diagramas de Penrose para describir los eventos que se desarrollan dentro del agujero. Los autores describen cómo un astronauta, al cruzar este umbral, experimentaría un tiempo finito antes de ser inevitablemente destruido en la singularidad del agujero negro.
+
+Se presentan varios ejemplos de trayectorias posibles para diferentes astronautas, destacando cómo cada uno experimenta el tiempo de manera distinta según su movimiento y aceleración. Por ejemplo, un astronauta que caiga libremente experimentará más tiempo antes de alcanzar la singularidad que uno que intente resistir la atracción gravitacional con sus cohetes. Este análisis revela la naturaleza contraintuitiva del espacio-tiempo dentro de un agujero negro, donde las leyes de la física se retuercen de manera dramática.
+
+Una característica interesante es que desde la perspectiva de un observador externo, los astronautas parecerían congelarse en el tiempo a medida que se acercan al horizonte de eventos, debido a la extrema dilatación del tiempo. Sin embargo, dentro del agujero negro, todos los observadores ven que su destino es la singularidad, un "momento en el tiempo" del cual no pueden escapar.
+
+Los autores también explican el fenómeno de la "espaguetificación", donde los objetos que caen en un agujero negro se estiran y se aplastan debido a las fuerzas de marea extremas. Este estiramiento se debe a la diferencia en la fuerza gravitacional experimentada entre la cabeza y los pies del astronauta, que se vuelve tan significativa que incluso las partículas más elementales que componen el cuerpo humano serían separadas antes de llegar a la singularidad.
+
+El capítulo concluye con una discusión sobre cómo, desde la perspectiva de un observador lejano, nada parece cruzar el horizonte de eventos, ya que la luz emitida por cualquier objeto se corre tanto al rojo que se desvanece en la oscuridad antes de que se pueda ver.
+
+\section*{Capítulo 6: Agujeros Blancos y Agujeros de Gusano}
+
+En este capítulo, los autores introducen conceptos aún más exóticos, como los agujeros blancos y los agujeros de gusano. Un agujero blanco es teóricamente el opuesto de un agujero negro: mientras que nada puede escapar de un agujero negro, nada puede entrar en un agujero blanco. Sin embargo, la existencia de agujeros blancos es puramente teórica y no hay evidencia observacional de ellos en el universo.
+
+Los agujeros de gusano, por otro lado, son soluciones hipotéticas a las ecuaciones de la relatividad general que podrían conectar dos puntos distantes en el espacio-tiempo. Los autores explican cómo un agujero de gusano puede ser visualizado como un túnel a través del espacio-tiempo, creando un atajo entre dos lugares que, de otro modo, estarían muy alejados.
+
+El capítulo discute la idea de los diagramas de Penrose ampliados, que muestran cómo los agujeros de gusano podrían conectar diferentes regiones del espacio-tiempo. Esto introduce la posibilidad de viajar a través de un agujero de gusano de un universo a otro o de una parte del universo a otra en un tiempo más corto que el que tomaría viajar a través del espacio convencional.
+
+Los autores también abordan las limitaciones y los problemas asociados con los agujeros de gusano, como la inestabilidad y la necesidad de "materia exótica" con densidad de energía negativa para mantener el agujero abierto. Aunque estas ideas son fascinantes y han sido populares en la ciencia ficción, los autores señalan que, hasta ahora, no hay pruebas de que los agujeros de gusano existan realmente en nuestro universo.
+
+Finalmente, el capítulo reflexiona sobre cómo estos conceptos, aunque teóricos, podrían ofrecer pistas sobre la naturaleza profunda del espacio-tiempo y podrían ser clave para futuras teorías que busquen unificar la relatividad general y la mecánica cuántica.
+
+\section*{Capítulo 7: El País de las Maravillas de Kerr}
+
+Este capítulo se adentra en los agujeros negros de Kerr, que son agujeros negros en rotación. A diferencia de los agujeros negros estáticos descritos por la métrica de Schwarzschild, los agujeros negros de Kerr tienen propiedades adicionales debido a su rotación, lo que genera fenómenos únicos en el espacio-tiempo circundante.
+
+Uno de los conceptos más importantes introducidos es el de la ergosfera, una región fuera del horizonte de eventos donde la estructura del espacio-tiempo es arrastrada por la rotación del agujero negro. En esta región, es imposible para un objeto permanecer en reposo con respecto a un observador lejano; todos los objetos son arrastrados en la dirección de la rotación del agujero negro.
+
+El proceso de Penrose es otro tema crucial del capítulo. Se describe cómo es posible extraer energía de un agujero negro de Kerr al dividir una partícula en dos dentro de la ergosfera. Una parte de la partícula puede caer en el agujero negro, mientras que la otra puede escapar con más energía de la que tenía originalmente. Este proceso teórico es fascinante porque sugiere que los agujeros negros no solo son destructores de materia, sino que también pueden ser fuentes de energía en ciertas condiciones.
+
+Además, los autores exploran la posibilidad de que los agujeros de gusano puedan formarse en el contexto de agujeros negros de Kerr, abriendo la puerta a conexiones entre diferentes puntos del espacio-tiempo, aunque con desafíos significativos en términos de estabilidad y física exótica.
+
+El capítulo concluye con una discusión sobre cómo los agujeros negros de Kerr amplían nuestra comprensión de la relatividad general y desafían nuestras intuiciones sobre el espacio, el tiempo y la energía. Los autores destacan que la rotación añade una capa de complejidad que hace que los agujeros negros sean aún más intrigantes y relevantes para la física moderna.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Agujero Negro de Reissner-Nordstrom}
 
 \hfill
 
-\textbf{a) }
+\textbf{a) } Se realizó el calculo usando sagemanifolds 
+\begin{minted}{python}
+  M = Manifold(4, 'M', latex_name=r'\mathscr{M}', structure='Lorentzian')
+  X.<t,r,th,ph> = M.chart(r"t r:(0,+oo) th:(0,pi):\theta ph:(0,2*pi):\varphi:periodic")
+
+  m = var('m')
+  assume(m>=0)
+
+  Q = var('Q')
+  assume(abs(Q)<m)
+
+  fr = 1 - 2*m/r + Q^2/r^2
+
+  g = M.metric()
+
+  g[0,0] = -fr
+  g[1,1] = 1/fr
+  g[2,2] = r^2
+  g[3,3] = r^2*sin(th)^2
+
+  print(g.display())
+  print((g.ricci()).display())
+\end{minted}
+\begin{gather*}
+  g = \left( -\frac{Q^{2}}{r^{2}} + \frac{2 \, m}{r} - 1 \right) \mathrm{d} t\otimes \mathrm{d} t + \left( \frac{1}{\frac{Q^{2}}{r^{2}} - \frac{2 \, m}{r} + 1} \right) \mathrm{d} r\otimes \mathrm{d} r + r^{2} \mathrm{d} {\theta}\otimes \mathrm{d} {\theta} + r^{2} \sin\left({\theta}\right)^{2} \mathrm{d} {\varphi}\otimes \mathrm{d} {\varphi} \\
+\mathrm{Ric}\left(g\right) = \left( \frac{Q^{4} - 2 \, Q^{2} m r + Q^{2} r^{2}}{r^{6}} \right) \mathrm{d} t\otimes \mathrm{d} t + \left( -\frac{Q^{2}}{Q^{2} r^{2} - 2 \, m r^{3} + r^{4}} \right) \mathrm{d} r\otimes \mathrm{d} r + \frac{Q^{2}}{r^{2}} \mathrm{d} {\theta}\otimes \mathrm{d} {\theta} + \frac{Q^{2} \sin\left({\theta}\right)^{2}}{r^{2}} \mathrm{d} {\varphi}\otimes \mathrm{d} {\varphi} 
+\end{gather*}
 
 \textbf{b) } Buscamos los valores de $ r  $ donde $ g ^ {rr } = 0  $
 \begin{gather*}
@@ -66,7 +140,7 @@ Para $ M < \left|Q \right| $ No hay soluciones reales por lo que no existen hori
   v= t + r^* \quad \rightarrow \quad dt = dv + dr^* \qquad \qquad dr^* = \frac{dr }{f(r)} 
 \end{gather*}
 
-Reemplazando en la metrica 
+Reemplazando en la métrica 
 \begin{align*}
   ds^2 &= - f(r) (dv-dr^*)^2 + f^{-1}\left(r\right) dr^2 + r^2 d\Omega \\
        &= - f(r) dv^2 + 2 f(r) dv dr^* - f(r) dr^* + f(r) dr^2 + r^2 d\Omega \\
@@ -74,11 +148,134 @@ Reemplazando en la metrica
        &= - f(r) dv^2 + 2 dvdr + r^2 d\Omega
 \end{align*}
 
-Para hallar la singularidad de la metrica: 
+Para hallar la singularidad de la métrica: 
 \begin{gather*}
   f(r) = 1 - \frac{2M }{r } + \frac{Q^2 }{r^2 } \quad \rightarrow \quad \infty \qquad \text{Cuando } r \rightarrow 0  
 \end{gather*}
 Por lo que existe una singularidad en $ r= 0 $.
+
+\hfill
+
+
+\hfill 
+
+\textbf{d) } Se realizó la comprobación reemplazando $ \frac{\partial  }{\partial v } $ en la ecuación de killing $ \mathcal L _{\frac{\partial  }{\partial v }} g  $
+\begin{minted}{python}
+  M = Manifold(4, 'M', latex_name=r'\mathscr{M}', structure='Lorentzian')
+  X.<v,r,th,ph> = M.chart(r"v r:(0,+oo) th:(0,pi):\theta ph:(0,2*pi):\varphi:periodic")
+
+  m = var('m')
+  assume(m>=0)
+
+  Q = var('Q')
+  assume(abs(Q)<m)
+
+  fr = 1 - 2*m/r + Q^2/r^2
+
+  g = M.metric()
+
+  g[0,0] = -fr
+  g[0,1] = 2
+  g[2,2] = r^2
+  g[3,3] = r^2*sin(th)^2
+
+  print(g.display())
+
+########### Vector de Killing ###############
+  v = M.vector_field(1,0,0,0, name='v') # Vector de Killing  \frac{\partial}{\partial v}
+  print(f'L_\\xi(g) = {g.lie_der(v).display()}')
+\end{minted}
+Lo cual nos da 0 por lo que $ \frac{\partial  }{\partial v } $ es un vector de killing
+\begin{gather*}
+  \mathcal L _{\frac{\partial  }{\partial v }} g = 0 
+\end{gather*}
+
+
+
+
+
+
+\section{Energía en la métrica de Reissner-Nordstrom}
+
+\hfill 
+
+\textbf{a) } 
+\begin{gather*}
+  E = - K_\mu p ^ {\mu} \qquad \qquad p ^ {\mu} = m \frac{d x ^ {\mu} }{d \tau} + e A ^ {\mu} \qquad\qquad A_\mu = \left(\frac{Q }{r }, \vec A \right) \quad \rightarrow \quad A ^ {0 } = g ^ {\mu\nu} A _\nu \\
+  E = g _{00 } p^0 \xi^0 = \left(1 - \frac{r_s }{r} + \frac{GQ^2 }{r^2 }\right) m \frac{d x^0  }{d \tau} + e \frac{Q }{r }
+\end{gather*}
+
+\hfill 
+
+\textbf{b) } Cerca del horizonte $ r \rightarrow r_+  $ la energía puede ser negativa ya que $ E = \frac{eQ }{r_*} < 0  $ cuando $ Q > 0  $ osea cuando el agujero negro está cargado positivamente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Métrica de Eguchi-Hanson}
+
+\hfill 
+
+
+\textbf{a) }
+
+Para \( n = 1 \):
+
+\[
+\text{tr}(R) = R^a{}_a = 0
+\]
+
+Para \( n \) impar, la traza se obtiene sumando formas diferenciales de grado impar, que son automáticamente cero en una variedad de dimensión par.
+
+Para \( n = 2 \):
+
+\[
+\text{tr}(R^2) = R^a{}_b \wedge R^b{}_a = 0
+\]
+
+Para todos \( n \) impares, se mantiene la nulidad debido a las propiedades de simetría y antisimetricidad de las formas diferenciales. Por lo tanto, \(\text{tr}(R^n) = 0\) para \( n \) impar.
+
+\hfill 
+
+\textbf{b)}
+
+La primera clase de Pontryagin \( p_1 \) se define como:
+
+\[
+p_1 = - \frac{1}{8\pi^2} \text{tr}(R^2)
+\]
+
+Para probar que es cerrada, calculamos su diferencial exterior:
+
+\[
+dp_1 = - \frac{1}{8\pi^2} d(\text{tr}(R^2))
+\]
+
+Utilizando la segunda identidad de Bianchi:
+
+\[
+dR^a{}_b + R^a{}_c \wedge \omega^c{}_b - \omega^a{}_c \wedge R^c{}_b = 0
+\]
+
+Tomando la traza y utilizando la linealidad del operador \(d\):
+
+\[
+d(\text{tr}(R^2)) = 2 \text{tr}(R \wedge dR)
+\]
+
+Dado que \( dR \) involucra conexiones que se cancelan por simetría en la traza, se concluye que \( dp_1 = 0 \). Por tanto, \( p_1 \) es cerrada.
+
+
 
 
 \end{document}

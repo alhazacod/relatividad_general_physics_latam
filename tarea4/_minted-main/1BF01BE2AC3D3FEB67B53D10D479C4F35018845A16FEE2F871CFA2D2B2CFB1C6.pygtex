@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{M} \PYG{o}{=} \PYG{n}{Manifold}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}M\PYGZsq{}}\PYG{p}{,} \PYG{n}{latex\PYGZus{}name}\PYG{o}{=}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZbs{}mathscr}\PYG{l+s+si}{\PYGZob{}M\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{structure}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Lorentzian\PYGZsq{}}\PYG{p}{)}
+  \PYG{n}{X}\PYG{o}{.\PYGZlt{}}\PYG{n}{v}\PYG{p}{,}\PYG{n}{r}\PYG{p}{,}\PYG{n}{th}\PYG{p}{,}\PYG{n}{ph}\PYG{o}{\PYGZgt{}} \PYG{o}{=} \PYG{n}{M}\PYG{o}{.}\PYG{n}{chart}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}v r:(0,+oo) th:(0,pi):\PYGZbs{}theta ph:(0,2*pi):\PYGZbs{}varphi:periodic\PYGZdq{}}\PYG{p}{)}
+
+  \PYG{n}{m} \PYG{o}{=} \PYG{n}{var}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{)}
+  \PYG{n}{assume}\PYG{p}{(}\PYG{n}{m}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{0}\PYG{p}{)}
+
+  \PYG{n}{Q} \PYG{o}{=} \PYG{n}{var}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Q\PYGZsq{}}\PYG{p}{)}
+  \PYG{n}{assume}\PYG{p}{(}\PYG{n+nb}{abs}\PYG{p}{(}\PYG{n}{Q}\PYG{p}{)}\PYG{o}{\PYGZlt{}}\PYG{n}{m}\PYG{p}{)}
+
+  \PYG{n}{fr} \PYG{o}{=} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{m}\PYG{o}{/}\PYG{n}{r} \PYG{o}{+} \PYG{n}{Q}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}\PYG{o}{/}\PYG{n}{r}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}
+
+  \PYG{n}{g} \PYG{o}{=} \PYG{n}{M}\PYG{o}{.}\PYG{n}{metric}\PYG{p}{()}
+
+  \PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{fr}
+  \PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{2}
+  \PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{]} \PYG{o}{=} \PYG{n}{r}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}
+  \PYG{n}{g}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{]} \PYG{o}{=} \PYG{n}{r}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{th}\PYG{p}{)}\PYG{o}{\PYGZca{}}\PYG{l+m+mi}{2}
+
+  \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{g}\PYG{o}{.}\PYG{n}{display}\PYG{p}{())}
+
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{} Vector de Killing \PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}}
+  \PYG{n}{v} \PYG{o}{=} \PYG{n}{M}\PYG{o}{.}\PYG{n}{vector\PYGZus{}field}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{name}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}v\PYGZsq{}}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Vector de Killing  \PYGZbs{}frac\PYGZob{}\PYGZbs{}partial\PYGZcb{}\PYGZob{}\PYGZbs{}partial v\PYGZcb{}}
+  \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}L\PYGZus{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{xi(g) = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{g}\PYG{o}{.}\PYG{n}{lie\PYGZus{}der}\PYG{p}{(}\PYG{n}{v}\PYG{p}{)}\PYG{o}{.}\PYG{n}{display}\PYG{p}{()}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

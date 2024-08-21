@@ -22,7 +22,6 @@ g[_sage_const_1 ,_sage_const_1 ] = _sage_const_1 /fr
 g[_sage_const_2 ,_sage_const_2 ] = r**_sage_const_2 
 g[_sage_const_3 ,_sage_const_3 ] = r**_sage_const_2 *sin(th)**_sage_const_2 
 
-print(g.display())
-print(f'\nR^(mu nu) = {(g.ricci()).display()}')
-print((g.ricci()).display())
+print( latex(g.display()) )
+print( latex((g.ricci()).display()) )
 
