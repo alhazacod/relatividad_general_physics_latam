@@ -1,0 +1,110 @@
+\documentclass{article}
+
+\usepackage[most]{tcolorbox}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in]{geometry} % Controla los márgenes
+\usepackage{titling}
+
+\title{Tarea \# 6 Relatividad General Physics Latam}
+\author{Manuel Garcia.}
+\date{\today}
+
+\renewcommand{\maketitlehooka}{%
+  \centering
+  \vspace*{0.05cm} % Espacio vertical antes del título
+}
+
+\renewcommand{\maketitlehookd}{%
+  \vspace*{2cm} % Espacio vertical después de la fecha
+}
+
+\newcommand{\caja}[3]{%
+  \begin{tcolorbox}[colback=#1!5!white,colframe=#1!25!black,title=#2]
+    #3
+  \end{tcolorbox}%
+}
+
+\begin{document}
+\maketitle
+
+
+\section{Dinámica del campo escalar durante la inflación}
+
+El Lagrangiano para un campo escalar en un espacio-tiempo curvo es
+
+\[
+L = \sqrt{-g} \left[ \frac{1}{2} g^{\mu \nu} \partial_\mu \phi \partial_\nu \phi - V(\phi) \right]
+\]
+
+donde \( g = \det(g_{\mu \nu}) \) es el determinante del tensor métrico.
+
+
+\textbf{a) } Para un campo homogenero $ \phi = \phi(t) $ en un espacio FLRW, el determinante del tensor metrico es 
+\begin{gather*}
+  g = - a^6 (t) 
+\end{gather*}
+Evaluando los terminos de la ecuacion de movimiento para $ \phi(t)  $
+\begin{gather*}
+  \frac{\partial L  }{\partial \dot \phi }= a^3 \dot \phi \qquad \qquad \frac{d  }{d t } \left(\frac{\partial L  }{\partial \dot \phi }\right) = 3 a^2 \dot a \dot \phi + a^3 \ddot \phi
+\end{gather*}
+Por lo tanto la ecuacion de movimiento resulta
+\[
+\ddot{\phi} + 3H \dot{\phi} + \frac{dV}{d\phi} = 0
+\]
+donde \( H = \frac{\dot{a}}{a} \) es el parámetro de Hubble.
+
+\hfill 
+
+
+\hfill 
+
+
+\hfill 
+
+\textbf{b) }
+
+\begin{align*}
+  \frac{d V }{d \phi } &= m^2 \phi \\
+  \dot \phi &= -\frac{3\chi \dot a - 2 a \dot \chi }{2 a ^ {5/2}} \\
+  \ddot \phi &= \frac{15 \, \chi \dot a^2 - 6 \, a \chi \ddot a - 12 \, a \dot a \dot \chi + 4 \, a^{2} \ddot \chi }{4 \, a^{\frac{7}{2}}}
+\end{align*}
+Reemplazando en la ecuacion de movimiento y usando que $ H = \frac{\dot a }{a } $ , $ \frac{\ddot a }{a } = \dot H + H^2  $
+\begin{gather}
+  \ddot \chi + \left(m^2 - \frac{3}{2} \frac{\ddot a }{a } - \frac{3}{4} \frac{\dot a^2 }{a^2 } \right)\chi = 0 \\
+  \rightarrow \quad \ddot \chi + \left(m^2 - \frac{3}{2} \dot H - \frac{9 }{4 } H^2 \right)\chi = 0
+\end{gather}
+Para $ m^2 >> H^2 \approx \dot H  $ La ecuacion de movimiento se reduce a un oscilador armonico 
+\begin{gather}
+  \ddot \phi + m^2 \phi = 0 
+\end{gather}
+Con solucion 
+\begin{gather}
+  \phi(t) = \phi_0 e ^ {- i m t }
+\end{gather}
+
+\subsection{3. Solución para \( \phi(t) \)}
+
+Suponiendo que \( m^2 \gg H^2 \sim \dot{H} \), la solución para \( \phi(t) \) es:
+
+\[
+\phi(t) = \phi_0 e^{-imt}
+\]
+
+\subsection{4. Densidad promedio como fluido de materia}
+
+La densidad de energía del campo escalar es:
+
+\[
+\rho_\phi = \frac{1}{2} \dot{\phi}^2 + V(\phi)
+\]
+
+En el límite en que la presión es despreciable, la densidad de energía del campo se comporta como un fluido de materia sin presión, \( \rho \propto a^{-3} \).
+
+\end{document}

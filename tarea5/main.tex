@@ -35,21 +35,36 @@
 \maketitle
 
 \section{Agujeros negro en otras dimensiones }
-\begin{gather}
-  g^{00} = \frac{r ^ {6 }}{l ^ {6 }} \left(1 - \frac{ml^2 }{r^2 }\right) \qquad \qquad 
-  g ^ {11 } = -\frac{l^2 }{r^2 }\left(1 - \frac{ml^2 }{r^2 }\right)^ {-1 } \\ 
-  \frac{d g _{00 }  }{d r} = \frac{6r^5 }{l^6 } - \frac{4mr^3 }{l^4}
-\end{gather}
-\begin{align*}
-  \kappa &= \frac{1}{2} \left[\sqrt{-g ^ {00 } g ^ {11 }}  \left|\frac{d g _{00 }  }{d r}\right| \right] _{r = r^+} \\
-         &= \frac{1}{2} \left[\sqrt{\left(\frac{r^6 }{l^6 } - \frac{mr^4 }{l^4 }\right) \left(\frac{r^2 }{l^2 } - m\right)^ {-1}} \left(\frac{6r^5 }{l^6 } - \frac{4mr^3 }{l^4}\right) \right] \\
-         &= \left. \frac{r^5 }{l^6 }\left[\frac{3r^2 }{l^2 } - 2m\right] \right|_{r= r^+}  \\
-         &= \frac{r_+^5 }{l^6 }
-\end{align*}
-Reemplazando en la temperatura de Hawking $ T_H = \frac{\kappa}{2\pi } $
-\begin{gather*}
-  T_H = \frac{r^5 }{2\pi l^6 } 
-\end{gather*}
+\begin{itemize}
+  \item 
+    Para $ z  $ general 
+    \begin{align*}
+      \kappa &= \left[\sqrt{\frac{l ^ {2z }}{r ^ {2z }} \left(1 - \frac{ml^2 }{r^2 }\right)^ {-1} \ \frac{r^2 }{l^2 } \left(1 - \frac{ml^2 }{r^2}\right)} \left(\frac{z r ^ {2z-1 }}{l ^ {2z }} - \frac{m r ^ {2z-3 }(z-2)}{l ^ {2z-2}}\right) \right] _{r = r_+ } 
+      \\
+             &= \frac{l ^ {z - 1 }}{r_+ ^ {z - 1 }} \left(\frac{z r_+ ^ {2z-1 }}{l ^ {2z }} - \frac{m r_+ ^ {2z-3 }(z-1)}{l ^ {2z-2}}\right) 
+    \end{align*}
+    \begin{gather*}
+      T_H = \frac{\kappa}{2\pi} = \frac{1}{2\pi} \frac{l ^ {z - 1 }}{r_+ ^ {z - 1 }} \left(\frac{z r_+ ^ {2z-1 }}{l ^ {2z }} - \frac{m r_+ ^ {2z-3 }(z-2)}{l ^ {2z-2}}\right)
+    \end{gather*}
+  \item 
+    Para $ z = 3  $ y utilizando que $ r_+ = \sqrt{m } l $
+    \begin{gather}
+      T_H = \frac{r_+^3 }{2\pi l^4 }
+    \end{gather} 
+  \item 
+    Para demostrar que $ dM = T_{bh} dS_{bh} $ 
+    \begin{gather*}
+      T_{bh} = \frac{r_+^3 }{2\pi l^4 } \qquad\qquad S _{bh } = \frac{2\pi r_+ }{G_3} \quad \rightarrow \quad dS _{bh }  = \frac{2\pi}{G_3 } dr_+ 
+      \\
+      M = \frac{r_+^4 }{4G_3 l^4 } \quad \rightarrow \quad dM = \frac{r_+^3 }{G_3 l^4 }dr_+ \\
+      dM = \left(\frac{r_+^3 }{2\pi l^4 }\right) \left(\frac{2\pi }{G_3 } dr_+\right) = T _{bh } d S _{bh } 
+    \end{gather*}
+\end{itemize}
+
+
+
+
+
 
 
 
@@ -168,28 +183,23 @@ dt = H_0^{-1} \frac{da}{a} \left[ \Omega_\Lambda + \frac{1 - \Omega_\Lambda}{a^3
     \begin{gather*}
       t _{0.7 }  = \frac{0.36}{H_0} 
     \end{gather*}
+    Este universo es mas antiguo.
 
 \end{enumerate}
 
-\subsection*{(b) Integral para \(\Omega_\Lambda = 0.7\)}
-Para \(\Omega_\Lambda = 0.7\), la ecuación es:
-\[
-dt _{0.7}= H_0^{-1} \frac{da}{a} \left[ 0.7 + \frac{0.3}{a^3} \right]^{-1/2}
-\]
-La integral es:
-\[
-  t_{0.7} = H_0^{-1} \int_0^1 \frac{da}{a \left[ 0.7 + \frac{0.3}{a^3} \right]^{1/2}}
-\]
-Esta integral se resuelve numéricamente.
 
-\subsection*{(c) Repetición del cálculo para diferentes valores de \(h\)}
-Repetimos el cálculo para \(h = 0.67\), \(h = 0.73\) y \(h = 0.69\).
 
-Para \(\Omega_\Lambda = 0\):
-\[
-t_0 = \frac{2}{H_0} = \frac{2}{100 h \text{ km/s/Mpc}} = \frac{2}{100 \cdot 3.24 \times 10^{-18} h \text{ s}^{-1}}
-\]
 
-Para \(\Omega_\Lambda = 0.7\), \(t_0\) se calculará numéricamente, pero estará afectado por el valor de \(H_0\) (que depende de \(h\)).
+
+
+
+\section{Integrando las ecuaciones de Boltzman }
+\begin{itemize}
+  \item[\textbf{a)}] 
+    \begin{gather*}
+      \frac{\partial n  }{\partial t } = - 3 \frac{\dot a }{a } n - n \bar n \expval{\sigma v } + P(t)
+    \end{gather*}
+    Termino $ -3 \frac{\dot a }{a }n  $, este termino muestra la dilución de partículas debido a la expasión. Termino $ n\bar n \expval{\sigma v } $, este termino representa la aniquilación de partículas y antipartículas; $ \bar n  $ es la densidad numérica de antipartículas; $ \sigma $ es la sección eficaz de aniquilación; y $ v  $ es la velocidad relativa entre las partículas y antipartículas; el promedio $ \expval{\sigma v }  $ es la tasa de aniquilación. El termino $ P(t)  $ representa la producción de partículas.
+\end{itemize}
 
 \end{document}
